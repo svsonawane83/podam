@@ -3,7 +3,7 @@ jdk:
   - oraclejdk8
   - oraclejdk7
 script:
-  -  mvn install:install-file -DgroupId=org.eclipse.mylyn.github -DartifactId=org.eclipse.egit.github.core -Dversion=3.1.0.201310021548-r -Dpackaging=jar -Dfile=http://maven.wso2.org/nexus/content/repositories/wso2maven2/org/eclipse/egit/egit.repository/3.1.0.201310021548-r/egit.repository-3.1.0.201310021548-r.jar
+  -  mvn deploy:deploy-file -DgroupId=org.eclipse.mylyn.github -DartifactId=org.eclipse.egit.github.core -Dversion=3.1.0.201310021548-r -Dpackaging=jar -Dfile=org.eclipse.egit.github.core-3.1.0.201310021548-r.jar -Durl=podam/
 branches:
   only:
     - develop
