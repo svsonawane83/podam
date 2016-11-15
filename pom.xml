@@ -392,10 +392,16 @@
 			<id>ossrh</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
+		<repositories>
 		<repository>
 			<id>ossrh</id>
 			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
+		<repository>
+                <id>lib1</id>
+                 <url>http://dl.bintray.com/typesafe/maven-releases/org/eclipse/mylyn/github/org.eclipse.egit.github.core/3.1.0.201310021548-r/org.eclipse.egit.github.core-3.1.0.201310021548-r.jar</url>
+                 </repository>
+	       </repositories>
 		<site>
 			<id>github-project-site</id>
 			<url>gitsite:git@github.com/devopsfolks/podam.git</url>
@@ -403,6 +409,13 @@
 	</distributionManagement>
 
 	<dependencies>
+		 
+      		<dependency>
+         		<groupId>org.eclipse.mylyn.github</groupId>
+        		 <artifactId>org.eclipse.egit.github.core</artifactId>
+        		 <version>3.1.0.201310021548-r</version>
+     		</dependency>
+   
 		<dependency>
 			<groupId>net.jcip</groupId>
 			<artifactId>jcip-annotations</artifactId>
