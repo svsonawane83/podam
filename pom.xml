@@ -385,14 +385,6 @@
 				<artifactId>serenity-maven-plugin</artifactId>
 				<version>${serenity.version}</version>
 			</plugin>
-			<plugin>
-<groupId>org.eclipse.mylyn.github</groupId>
-<artifactId>org.eclipse.egit.github.core</artifactId>
-<version>3.1.0.201310021548-r</version>
-<configuration>
-<skip>true</skip>
-</configuration>
-</plugin>
 		</plugins>
 	</reporting>
 	<distributionManagement>
