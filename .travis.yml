@@ -3,8 +3,7 @@ jdk:
   - oraclejdk8
   - oraclejdk7
 install:
-  - mvn -B -Pdeploy -V dependency:go-offline
-  - mvn -B -Pdeploy -DexcludeGroupIds=org.eclipse.mylyn.github -V dependency:go-offline
+  - mvn install:install-file -DgroupId=org.eclipse.mylyn.github -DartifactId=org.eclipse.egit.github.core -Dversion=3.1.0.201310021548-r -Dpackaging=jar -Dfile=org.eclipse.egit.github.core-3.1.0.201310021548-r.jar -Durl=podam/
   
 script:
    - mvn clean verify
