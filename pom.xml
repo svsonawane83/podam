@@ -395,8 +395,7 @@
                 <goal>analyze-only</goal>
             </goals>
             <configuration>
-                <failOnWarning>true</failOnWarning>
-                <outputXML>true</outputXML>
+                <skip>true</skip>
             </configuration>
         </execution>
     </executions>
